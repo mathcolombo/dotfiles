@@ -12,7 +12,6 @@ local suppressMaximizeRule = hl.window_rule({
 
     suppress_event = "maximize",
 })
--- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
     -- Fix some dragging issues with XWayland
@@ -29,14 +28,6 @@ hl.window_rule({
     no_focus = true,
 })
 
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
-
 -- Hyprland-run windowrule
 hl.window_rule({
     name  = "move-hyprland-run",
@@ -46,19 +37,38 @@ hl.window_rule({
     float = true,
 })
 
-hl.layer_rule({
-  name = "noctalia",
-  match = {
-    namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd)$",
-  },
-  no_anim = true,
-  ignore_alpha = 0.5,
-  blur = true,
-  blur_popups = true,
+
+hl.window_rule({
+    match = { title = "^(Open File)(.*)$" },
+    float = true, center = true
+})
+hl.window_rule({
+    match = { title = "^(Select a File)(.*)$" },
+    float = true, center = true
+})
+hl.window_rule({
+    match = { title = "^(Open Folder)(.*)$" },
+    float = true, center = true
+})
+hl.window_rule({
+    match = { title = "^(Save As)(.*)$" },
+    float = true, center = true
 })
 
-hl.workspace_rule({ workspace = "1", monitor = "eDP-1", persistent = true })
-hl.workspace_rule({ workspace = "2", monitor = "eDP-1", persistent = true })
-hl.workspace_rule({ workspace = "3", monitor = "eDP-1", persistent = true })
--- hl.workspace_rule({ workspace = "4", monitor = "eDP-1", persistent = true })
--- hl.workspace_rule({ workspace = "5", monitor = "eDP-1", persistent = true })
+hl.window_rule({
+    name  = "float-utilities",
+    match = { class = "org.kde.kcalc" },
+    float  = true, center = true
+})
+
+hl.window_rule({
+    name  = "picture-in-picture",
+    match = {
+        title = "^Picture-in-Picture$",
+    },
+
+    float = true,
+    pin   = true,
+    move  = "69% 69%",
+    size  = "30% 30%",
+})
