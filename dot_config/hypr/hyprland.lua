@@ -5,7 +5,7 @@
 -- See https://wiki.hypr.land/Configuring/Start/
 
 -- 1. Constants
-require("modules.consts.mods")
+require("modules.consts.general")
 require("modules.consts.programs")
 
 -- 2. Core
@@ -27,9 +27,9 @@ require("modules.keybinds.noctalia")
 require("modules.keybinds.apps")
 
 -- 5. Rules
-require("modules.rules.window")
-require("modules.rules.layer")
-require("modules.rules.workspace")
+require("modules.rules.windows")
+require("modules.rules.layers")
+require("modules.rules.workspaces")
 
 -- For Noctalia Color templates
 require("noctalia").apply_theme()
