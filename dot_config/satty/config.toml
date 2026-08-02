@@ -1,0 +1,15 @@
+[general]
+
+fullscreen = false
+
+resize = { mode = "size", width = 1900, height = 1150 }
+
+floating-hack = true
+
+initial-tool = "brush"
+
+actions-on-enter = ["save-to-file", "exit"]
+
+actions-on-escape = ["exit"]
+
+output-filename = "~/Pictures/Screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png"

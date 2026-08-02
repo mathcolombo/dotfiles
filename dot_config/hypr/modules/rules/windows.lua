@@ -53,6 +53,10 @@ hl.window_rule({
     match = { title = "^(Save As)(.*)$" },
     float = true, center = true
 })
+hl.window_rule({
+    match = { title = ".*Fazer login nas Contas do Google.*" },
+    float = true, center = true
+})
 
 hl.window_rule({
     name  = "float-utilities",
