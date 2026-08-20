@@ -65,6 +65,18 @@ hl.window_rule({
 })
 
 hl.window_rule({
+    name  = "float-client-ide",
+    match = { title = "Welcome to JetBrains Rider" },
+    float = true, center = true
+})
+
+-- hl.window_rule({
+--     name  = "float-client-ide",
+--     match = { title = "Welcome to JetBrains Rider" },
+--     float = true, center = true
+-- })
+
+hl.window_rule({
     name  = "picture-in-picture",
     match = {
         title = "^Picture-in-Picture$",
