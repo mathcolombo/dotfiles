@@ -1,0 +1,22 @@
+[colors]
+background = "#201f21FF"
+text_primary = "#e5e1e3FF"
+text_muted = "#c8c5cdFF"
+accent_primary = "#c5c4ddFF"
+accent_secondary = "#c7c5d0FF"
+warning = "#debeceFF"
+error = "#ffb4abFF"
+insert_hint = "#debece80"
+backdrop = "#47464cFF"
+
+[colors.border]
+focused = "#c5c4ddFF"
+unfocused = "#47464cFF"
+scratchpad_focused = "#debeceFF"
+scratchpad_unfocused = "#432d3aFF"
+outer = "#131315FF"
+
+[colors.overview]
+background_tint = "#13131588"
+badge = "#c5c4ddFF"
+workspace_background = "#131315FF"
