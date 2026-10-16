@@ -19,7 +19,7 @@ honor_restored_maximize = false                 # Honor restored maximized state
 
 [environment]
 # GTK_THEME = "Adwaita:dark"
-QT_QPA_PLATFORMTHEME = "qt6ct"
+QT_QPA_PLATFORMTHEME = "kde"
 
 # Hardware events
 # These commands run when a laptop lid opens or closes. Uncomment either hook
