@@ -41,7 +41,7 @@ empty_above = false                             # Keep one empty workspace above
 [layout]
 mode = "dwindle"                              # scrolling, dwindle, or master
 gap = 8                                         # Logical pixels between tiles, 0-500
-width_presets = [0.333, 0.5, 0.667]             # Width and height cycling fractions
+# width_presets = [0.333, 0.5, 0.667]             # Width and height cycling fractions
 
 [layout.struts]
 # Signed logical pixels reserved after panel exclusive zones. Negative values
@@ -53,7 +53,7 @@ bottom = 0
 
 [layout.scrolling]
 # direction = "horizontal"                      # horizontal or vertical strip axis
-default_width_fraction = 0.5                    # Initial width for new columns, 0.1-1.0
+# default_width_fraction = 0.5                    # Initial width for new columns, 0.1-1.0
 center_underfull_strip = true                   # Center a strip narrower than the viewport
 center_focused = "never"                           # Always center the focused column
 

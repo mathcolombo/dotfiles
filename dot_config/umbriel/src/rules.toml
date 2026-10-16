@@ -20,7 +20,7 @@ blur_optimized = false
 [[window_rule]]
 match.app_id = "^dev.noctalia.UmbrielSharePicker$"
 default_floating = true
-default_size = [800, 600]
+# default_size = [800, 600]
 
 # Browsers expose no semantic PiP role or global position control.
 [[window_rule]]
@@ -82,8 +82,8 @@ default_pinned = true
 [[window_rule]]
 match.app_id = "^org.kde.kcalc$"
 default_floating = true
-default_width = 0.5
-default_height = 0.6
+# default_width = 0.5
+# default_height = 0.6
 
 # Dynamic effects and output policies can be combined in one matching rule.
 
